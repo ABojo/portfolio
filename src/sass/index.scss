@@ -1,9 +1,15 @@
+@use "./utils/typography";
+
+@use "./components/header";
+@use "./components/hero";
+
 :root {
   --color-primary: #455ddb;
   --color-bg-main: #fff;
   --color-bg-alternate: #f0f0f0;
   --color-text-dark: #000000;
   --color-text-light: #4e4e4e;
+  --color-text-lightest: #fff;
 
   --fs-1: 6rem;
   --fs-2: 4.6875rem;
@@ -17,6 +23,9 @@
 
   --lh-1: 2.5rem;
   --lh-2: 1.875rem;
+
+  --layout-max-width: 71rem;
+  --layout-width: 90%;
 }
 
 *,
@@ -29,6 +38,11 @@
 
 html {
   font-family: "Nunito", sans-serif;
+}
+
+body {
+  color: var(--color-text-dark);
+  font-size: var(--fs-6);
 }
 
 input,
