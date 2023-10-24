@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.about {
+  background-color: var(--color-bg-alternate);
+  padding-block: 9rem;
+
+  &__inner {
+    @include layout-constrain;
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    font-size: var(--fs-5);
+    line-height: var(--lh-1);
+    margin-bottom: 10rem;
+  }
+}
