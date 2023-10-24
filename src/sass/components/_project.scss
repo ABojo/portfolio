@@ -1,0 +1,99 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: var(--color-primary);
+      position: absolute;
+      top: -3rem;
+      z-index: -1;
+    }
+
+    img {
+      width: 100%;
+      box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    &--left::after {
+      left: -2rem;
+    }
+
+    &--right::after {
+      right: -2rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    font-size: var(--fs-6);
+    line-height: var(--lh-2);
+    margin-bottom: 1rem;
+  }
+
+  &__tools {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__tool {
+    background-color: var(--color-text-light);
+    color: var(--color-text-lightest);
+    font-weight: var(--fw-bold);
+    padding: 0.25rem 0.5rem;
+    font-size: var(--fs-6);
+    border-radius: 0.25rem;
+  }
+
+  &__links {
+    font-size: var(--fs-5);
+  }
+
+  &__live {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: var(--fw-bold);
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
+    background-repeat: no-repeat;
+    background-position: top 37px right 0px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-text-lightest);
+      background-position: top 0px right 0px;
+    }
+  }
+
+  &__code {
+    text-decoration: none;
+    color: var(--color-text-light);
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

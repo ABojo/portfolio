@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.work {
+  padding-block: 9rem;
+
+  &__inner {
+    @include layout-constrain;
+  }
+
+  &__heading {
+    margin-bottom: 9rem;
+  }
+}
