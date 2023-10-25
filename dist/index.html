@@ -243,5 +243,35 @@
         </div>
       </div>
     </section>
+    <section class="contact">
+      <div class="contact__inner">
+        <h2 class="heading-3 contact__heading">Contact <span class="highlight">Me</span></h2>
+        <form class="contact__form">
+          <div class="contact__field">
+            <input class="contact__input" id="email" type="email" placeholder="Email" required />
+            <label class="contact__label" for="email">Email</label>
+          </div>
+          <div class="contact__field">
+            <input class="contact__input" id="name" type="text" placeholder="Name" required />
+            <label class="contact__label" for="name">Name</label>
+          </div>
+          <div class="contact__field">
+            <input class="contact__input" id="subject" type="text" placeholder="Subject" required />
+            <label class="contact__label" for="subject">Subject</label>
+          </div>
+          <div class="contact__field">
+            <textarea
+              class="contact__input contact__input--big"
+              id="message"
+              type="text"
+              placeholder="Message"
+              required
+            ></textarea>
+            <label class="contact__label" for="message">Message</label>
+          </div>
+          <button class="contact__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
