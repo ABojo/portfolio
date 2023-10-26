@@ -1,5 +1,6 @@
 @use "./abstracts/" as *;
 
+@use "./utils/accessibility";
 @use "./utils/typography";
 
 @use "./components/header";
