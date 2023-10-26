@@ -10,6 +10,13 @@
   &__row {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $bp-2) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   &__logo {
@@ -22,6 +29,9 @@
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  &__nav {
   }
 
   &__list {

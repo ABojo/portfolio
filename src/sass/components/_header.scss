@@ -19,6 +19,12 @@
     }
   }
 
+  &__nav {
+    @media (max-width: $bp-4) {
+      display: none;
+    }
+  }
+
   &__list {
     list-style-type: none;
     display: flex;
@@ -59,6 +65,10 @@
     display: flex;
     list-style-type: none;
     gap: 1rem;
+
+    @media (max-width: $bp-2) {
+      display: none;
+    }
 
     a {
       color: var(--color-text-lightest);

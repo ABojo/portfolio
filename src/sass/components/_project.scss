@@ -1,16 +1,31 @@
+@use "../abstracts/" as *;
+
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 5rem;
 
+  @media (max-width: $bp-1) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: 15rem;
+
+    @media (max-width: $bp-5) {
+      margin-bottom: 12rem;
+    }
   }
 
   &__image {
     display: block;
     position: relative;
+
+    @media (max-width: $bp-1) {
+      grid-row: 1 / 2;
+    }
 
     &::after {
       display: block;
@@ -30,10 +45,18 @@
 
     &--left::after {
       left: -2rem;
+
+      @media (max-width: $bp-1) {
+        left: -1rem;
+      }
     }
 
     &--right::after {
       right: -2rem;
+
+      @media (max-width: $bp-1) {
+        right: -1rem;
+      }
     }
   }
 

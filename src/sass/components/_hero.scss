@@ -4,6 +4,10 @@
   @include layout-constrain;
   padding-block: 9rem;
 
+  @media (max-width: $bp-4) {
+    text-align: center;
+  }
+
   &__heading {
     font-weight: var(--fw-bold);
     font-size: var(--fs-1);
@@ -16,6 +20,10 @@
     font-size: var(--fs-6);
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+
+    @media (max-width: $bp-3) {
+      letter-spacing: 0.1rem;
+    }
   }
 
   &__pronunciation {
@@ -24,6 +32,18 @@
     position: absolute;
     top: 85%;
     left: 35rem;
+
+    @media (max-width: $bp-1) {
+      left: 28.5rem;
+    }
+
+    @media (max-width: $bp-3) {
+      left: 22rem;
+    }
+
+    @media (max-width: $bp-4) {
+      display: none;
+    }
   }
 
   &__sub {
@@ -38,6 +58,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @media (max-width: $bp-4) {
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -46,6 +70,10 @@
     font-size: var(--fs-5);
     border-radius: 0.5rem;
     transition: all 0.2s;
+
+    @media (max-width: $bp-4) {
+      padding: 1rem 2rem;
+    }
 
     &--work {
       color: var(--color-text-lightest);

@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .toolkit {
   &__heading {
     text-align: center;
@@ -23,6 +25,10 @@
     align-items: center;
     justify-items: center;
     grid-gap: 2rem;
+
+    @media (max-width: $bp-4) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__item {
