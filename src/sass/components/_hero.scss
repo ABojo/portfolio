@@ -12,7 +12,7 @@
   &__heading {
     font-weight: var(--fw-bold);
     font-size: var(--fs-1);
-    position: relative;
+    display: inline-block;
   }
 
   &__position {
@@ -30,20 +30,13 @@
   &__pronunciation {
     font-size: var(--fs-6);
     color: var(--color-text-light);
-    position: absolute;
-    top: 85%;
-    left: 35rem;
-
-    @media (max-width: $bp-1) {
-      left: 28.5rem;
-    }
-
-    @media (max-width: $bp-3) {
-      left: 22rem;
-    }
+    display: block;
+    text-align: right;
+    margin-top: -1rem;
 
     @media (max-width: $bp-4) {
-      display: none;
+      font-size: 12px;
+      margin-top: -0.5rem;
     }
   }
 
