@@ -12,7 +12,7 @@ function getCurrentSectionId() {
   let lastSectionId = null;
 
   for (let i = 0; i < sections.length; i++) {
-    if (window.scrollY >= sections[i].offsetTop) {
+    if (window.scrollY >= sections[i].offsetTop - 1) {
       lastSectionId = sections[i].id;
     }
   }
