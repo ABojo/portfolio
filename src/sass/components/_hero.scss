@@ -2,7 +2,8 @@
 
 .hero {
   @include layout-constrain;
-  padding-block: 9rem;
+  padding-top: 14rem;
+  padding-bottom: 9rem;
 
   @media (max-width: $bp-4) {
     text-align: center;
