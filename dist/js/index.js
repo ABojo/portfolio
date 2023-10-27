@@ -3,10 +3,14 @@ const navToggle = document.querySelector(".header__nav-toggle");
 const navLinks = document.querySelectorAll(".header__link");
 const sections = document.querySelectorAll("section");
 
-navToggle.addEventListener("click", () => {
+function toggleMobileNav() {
   navigation.classList.toggle("header__nav--open");
   navToggle.setAttribute("aria-expanded", navToggle.getAttribute("aria-expanded") === "true" ? false : true);
-});
+}
+
+function mobileNavIsOpen() {
+  return navigation.classList.contains("header__nav--open");
+}
 
 function getCurrentSectionId() {
   let lastSectionId = null;
@@ -29,6 +33,17 @@ function syncNavStyling(activeId) {
     }
   });
 }
+
+navToggle.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMobileNav();
+});
+
+document.body.addEventListener("click", (e) => {
+  if (mobileNavIsOpen()) {
+    toggleMobileNav();
+  }
+});
 
 window.addEventListener("scroll", () => {
   syncNavStyling(getCurrentSectionId());
