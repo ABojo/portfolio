@@ -42,10 +42,17 @@
 }
 
 .header {
+  padding-block: 1.5rem;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.5rem);
+  z-index: 1;
+}
+.header__inner {
   max-width: var(--layout-max-width);
   margin: 0 auto;
   width: var(--layout-width);
-  padding-top: 2.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -186,7 +193,8 @@
   max-width: var(--layout-max-width);
   margin: 0 auto;
   width: var(--layout-width);
-  padding-block: 9rem;
+  padding-top: 14rem;
+  padding-bottom: 9rem;
 }
 @media (max-width: 33.125rem) {
   .hero {
