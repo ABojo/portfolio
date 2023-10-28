@@ -148,21 +148,5 @@
     @media (max-width: $bp-2) {
       display: none;
     }
-
-    a {
-      color: var(--color-text-lightest);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 2.5rem;
-      width: 2.5rem;
-      background-color: var(--color-primary);
-      border-radius: 100%;
-      transition: all 0.2s;
-
-      &:hover {
-        background-color: var(--color-text-light);
-      }
-    }
   }
 }
