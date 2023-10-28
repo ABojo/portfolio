@@ -258,30 +258,57 @@
     <section class="contact" id="contact">
       <div class="contact__inner">
         <h2 class="heading-3 contact__heading">Contact <span class="highlight">Me</span></h2>
-        <form class="contact__form">
-          <div class="contact__field">
-            <input class="contact__input" id="email" type="email" placeholder="Email" required />
-            <label class="contact__label" for="email">Email</label>
+        <form class="form">
+          <div class="form__loader">
+            <div class="spinner form__spinner"></div>
+            Submitting Form
           </div>
-          <div class="contact__field">
-            <input class="contact__input" id="name" type="text" placeholder="Name" required />
-            <label class="contact__label" for="name">Name</label>
+          <div class="form__success">
+            <svg
+              class="form__check"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="50"
+              height="50"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#c8e6c9"
+                d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
+              ></path>
+              <path
+                fill="#4caf50"
+                d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"
+              ></path>
+            </svg>
+            Thanks, I'll be in touch 🫡
           </div>
-          <div class="contact__field">
-            <input class="contact__input" id="subject" type="text" placeholder="Subject" required />
-            <label class="contact__label" for="subject">Subject</label>
+          <div class="form__field">
+            <input class="form__input" name="email" id="email" type="email" placeholder="Email" required />
+            <label class="form__label" for="email">Email</label>
           </div>
-          <div class="contact__field">
+          <div class="form__field">
+            <input class="form__input" name="name" id="name" type="text" placeholder="Name" required />
+            <label class="form__label" for="name">Name</label>
+          </div>
+          <div class="form__field">
+            <input class="form__input" name="subject" id="subject" type="text" placeholder="Subject" required />
+            <label class="form__label" for="subject">Subject</label>
+          </div>
+          <div class="form__field">
             <textarea
-              class="contact__input contact__input--big"
+              class="form__input form__input--big"
+              name="message"
               id="message"
               type="text"
               placeholder="Message"
               required
             ></textarea>
-            <label class="contact__label" for="message">Message</label>
+            <label class="form__label" for="message">Message</label>
           </div>
-          <button class="contact__submit" type="submit">Submit</button>
+          <button class="form__submit" type="submit">Submit</button>
+          <p class="form__error-message">Sorry, there was a problem submitting the form 😔</p>
         </form>
       </div>
     </section>
