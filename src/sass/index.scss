@@ -17,7 +17,7 @@
 
 :root {
   --color-primary: #455ddb;
-  --color-bg-main: #fff;
+  --color-bg-main: 255 255 255;
   --color-bg-alternate: #f0f0f0;
   --color-text-dark: #000000;
   --color-text-light: #4e4e4e;
@@ -38,6 +38,15 @@
 
   --layout-max-width: 71rem;
   --layout-width: 90%;
+
+  @media (prefers-color-scheme: dark) {
+    --color-primary: #455ddb;
+    --color-bg-main: 0 0 0;
+    --color-bg-alternate: #131313;
+    --color-text-dark: #fff;
+    --color-text-light: #6e6e6e;
+    --color-text-lightest: #fff;
+  }
 
   @media (max-width: $bp-1) {
     --fs-1: 5rem;
@@ -81,6 +90,7 @@ html {
 }
 
 body {
+  background-color: rgb(var(--color-bg-main));
   color: var(--color-text-dark);
   font-size: var(--fs-6);
 }
