@@ -1,98 +1,102 @@
-const navigation = document.querySelector(".header__nav");
-const navToggle = document.querySelector(".header__nav-toggle");
-const navLinks = document.querySelectorAll(".header__link");
+(function () {
+  const navigation = document.querySelector(".header__nav");
+  const navToggle = document.querySelector(".header__nav-toggle");
+  const navLinks = document.querySelectorAll(".header__link");
+  const sections = document.querySelectorAll("section");
 
-const sections = document.querySelectorAll("section");
-
-const formElement = document.querySelector(".form");
-const formSubmit = document.querySelector(".form__submit");
-
-function toggleMobileNav() {
-  navigation.classList.toggle("header__nav--open");
-  navToggle.setAttribute("aria-expanded", navToggle.getAttribute("aria-expanded") === "true" ? false : true);
-}
-
-function mobileNavIsOpen() {
-  return navigation.classList.contains("header__nav--open");
-}
-
-function getCurrentSectionId() {
-  let lastSectionId = null;
-
-  for (let i = 0; i < sections.length; i++) {
-    if (window.scrollY >= sections[i].offsetTop - 1) {
-      lastSectionId = sections[i].id;
-    }
+  function toggleMobileNav() {
+    navigation.classList.toggle("header__nav--open");
+    navToggle.setAttribute("aria-expanded", navToggle.getAttribute("aria-expanded") === "true" ? false : true);
   }
 
-  return lastSectionId;
-}
+  function mobileNavIsOpen() {
+    return navigation.classList.contains("header__nav--open");
+  }
 
-function syncNavStyling(activeId) {
-  navLinks.forEach((navLink) => {
-    if (navLink.href.includes(activeId)) {
-      navLink.classList.add("header__link--active");
-    } else {
-      navLink.classList.remove("header__link--active");
+  function getCurrentSectionId() {
+    let lastSectionId = null;
+
+    for (let i = 0; i < sections.length; i++) {
+      if (window.scrollY >= sections[i].offsetTop - 1) {
+        lastSectionId = sections[i].id;
+      }
+    }
+
+    return lastSectionId;
+  }
+
+  function syncNavStyling(activeId) {
+    navLinks.forEach((navLink) => {
+      if (navLink.href.includes(activeId)) {
+        navLink.classList.add("header__link--active");
+      } else {
+        navLink.classList.remove("header__link--active");
+      }
+    });
+  }
+
+  navToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleMobileNav();
+  });
+
+  document.body.addEventListener("click", (e) => {
+    if (mobileNavIsOpen()) {
+      toggleMobileNav();
     }
   });
-}
 
-async function submitContactData(formData) {
-  const response = await fetch("https://formspree.io/f/xjvqlllw", {
-    method: "POST",
-    body: formData,
-    headers: {
-      Accept: "application/json",
-    },
+  window.addEventListener("scroll", () => {
+    syncNavStyling(getCurrentSectionId());
   });
+})();
 
-  return response;
-}
+//setup contact form
+(function () {
+  const formElement = document.querySelector(".form");
+  const formSubmit = document.querySelector(".form__submit");
 
-const formController = {
-  toggleLoading: function () {
+  async function submitContactData(formData) {
+    const response = await fetch("https://formspree.io/f/xjvqlllw", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    return response;
+  }
+
+  function toggleLoading() {
     formElement.classList.toggle("form--loading");
     formSubmit.disabled = !formSubmit.disabled;
-  },
-  markAsSubmitted: function () {
+  }
+
+  function markAsSubmitted() {
     formElement.classList.add("form--submitted");
     formSubmit.disabled = true;
-  },
-  showError: function () {
+  }
+
+  function showError() {
     formElement.classList.add("form--error");
-  },
-};
-
-navToggle.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMobileNav();
-});
-
-document.body.addEventListener("click", (e) => {
-  if (mobileNavIsOpen()) {
-    toggleMobileNav();
   }
-});
 
-window.addEventListener("scroll", () => {
-  syncNavStyling(getCurrentSectionId());
-});
+  formElement.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-formElement.addEventListener("submit", async (e) => {
-  e.preventDefault();
+    const formData = new FormData(e.target);
 
-  const formData = new FormData(e.target);
+    toggleLoading();
 
-  formController.toggleLoading();
+    const response = await submitContactData(formData);
 
-  const response = await submitContactData(formData);
+    toggleLoading();
 
-  formController.toggleLoading();
-
-  if (response.ok) {
-    formController.markAsSubmitted();
-  } else {
-    formController.showError();
-  }
-});
+    if (response.ok) {
+      markAsSubmitted();
+    } else {
+      showError();
+    }
+  });
+})();
