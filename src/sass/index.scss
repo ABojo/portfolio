@@ -22,6 +22,7 @@
   --color-text-dark: #000000;
   --color-text-light: #4e4e4e;
   --color-text-lightest: #fff;
+  --shadow-nav: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 
   --fs-1: 6rem;
   --fs-2: 4.6875rem;
@@ -46,6 +47,7 @@
     --color-text-dark: #fff;
     --color-text-light: #6e6e6e;
     --color-text-lightest: #fff;
+    --shadow-nav: 0px 2px 20px 0px rgba(69, 93, 219, 1);
   }
 
   @media (max-width: $bp-1) {
