@@ -1,0 +1,31 @@
+.theme-toggle {
+  height: 2rem;
+  width: 4.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-text-light);
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.25rem;
+  position: relative;
+  transition: all 0.2s;
+
+  &::after {
+    transition: all 0.2s;
+    display: block;
+    content: "";
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-text-lightest);
+    border-radius: 100%;
+    position: relative;
+    left: 0;
+  }
+
+  &--enabled {
+    background-color: var(--color-primary);
+  }
+
+  &--enabled::after {
+    left: 2.5rem;
+  }
+}

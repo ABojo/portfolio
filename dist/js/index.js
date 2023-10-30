@@ -1,3 +1,51 @@
+//setup theme toggle
+(function () {
+  const themeToggle = document.querySelector(".theme-toggle");
+  const storageKey = "saved-theme";
+
+  function toggleDarkMode() {
+    document.documentElement.classList.toggle("dark");
+    themeToggle.classList.toggle("theme-toggle--enabled");
+    themeToggle.setAttribute("aria-checked", themeToggle.getAttribute("aria-checked") === "true" ? "false" : "true");
+  }
+
+  function getSavedTheme() {
+    return localStorage.getItem(storageKey);
+  }
+
+  function saveTheme(newTheme) {
+    localStorage.setItem(storageKey, newTheme);
+  }
+
+  function toggleSavedTheme() {
+    getSavedTheme() === "light" ? saveTheme("dark") : saveTheme("light");
+  }
+
+  function userPrefersDarkMode() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  function setupTheme() {
+    let currentTheme = getSavedTheme();
+
+    if (!currentTheme) {
+      currentTheme = userPrefersDarkMode() ? "dark" : "light";
+
+      saveTheme(currentTheme);
+    }
+
+    if (currentTheme === "dark") toggleDarkMode();
+  }
+
+  setupTheme();
+
+  themeToggle.addEventListener("click", () => {
+    toggleDarkMode();
+    toggleSavedTheme();
+  });
+})();
+
+//setup navigation
 (function () {
   const navigation = document.querySelector(".header__nav");
   const navToggle = document.querySelector(".header__nav-toggle");

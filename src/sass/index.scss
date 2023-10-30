@@ -4,6 +4,7 @@
 @use "./utils/typography";
 
 @use "./components/header";
+@use "./components/theme-toggle";
 @use "./components/social";
 @use "./components/hero";
 @use "./components/about";
@@ -44,19 +45,6 @@
   --layout-max-width: 71rem;
   --layout-width: 90%;
 
-  @media (prefers-color-scheme: dark) {
-    --color-primary: #455ddb;
-    --color-bg-main: 0 0 0;
-    --color-bg-alternate: #131313;
-    --color-text-dark: #fff;
-    --color-text-light: #6e6e6e;
-    --color-text-lightest: #fff;
-
-    --shadow-nav: 0px 2px 20px 0px rgba(69, 93, 219, 1);
-    --shadow-project: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
-    --shadow-contact-input: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
-  }
-
   @media (max-width: $bp-1) {
     --fs-1: 5rem;
     --fs-2: 4rem;
@@ -83,6 +71,19 @@
     --fs-5: 1rem;
     --fs-6: 0.9rem;
   }
+}
+
+:root.dark {
+  --color-primary: #455ddb;
+  --color-bg-main: 0 0 0;
+  --color-bg-alternate: #131313;
+  --color-text-dark: #fff;
+  --color-text-light: #6e6e6e;
+  --color-text-lightest: #fff;
+
+  --shadow-nav: 0px 2px 20px 0px rgba(69, 93, 219, 1);
+  --shadow-project: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+  --shadow-contact-input: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
 }
 
 *,
