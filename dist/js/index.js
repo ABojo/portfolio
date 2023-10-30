@@ -1,6 +1,7 @@
 //setup theme toggle
 (function () {
   const themeToggle = document.querySelector(".theme-toggle");
+  const themeToggleButton = document.querySelector(".theme-toggle__button");
   const storageKey = "saved-theme";
 
   function toggleDarkMode() {
@@ -39,7 +40,7 @@
 
   setupTheme();
 
-  themeToggle.addEventListener("click", () => {
+  themeToggleButton.addEventListener("click", () => {
     toggleDarkMode();
     toggleSavedTheme();
   });
