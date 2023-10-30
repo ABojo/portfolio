@@ -1,11 +1,11 @@
 .theme-toggle {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
   &__button {
-    height: 2rem;
-    width: 4rem;
+    height: 1.5rem;
+    width: 3rem;
     border-radius: 1rem;
     background-color: var(--color-text-light);
     border: none;
@@ -52,6 +52,6 @@
   }
 
   &--enabled &__button::after {
-    left: 2rem;
+    left: 1.5rem;
   }
 }
