@@ -26,6 +26,7 @@
 
   --shadow-nav: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
   --shadow-project: 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
+  --shadow-contact-input: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
 
   --fs-1: 6rem;
   --fs-2: 4.6875rem;
@@ -53,6 +54,7 @@
 
     --shadow-nav: 0px 2px 20px 0px rgba(69, 93, 219, 1);
     --shadow-project: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+    --shadow-contact-input: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
   }
 
   @media (max-width: $bp-1) {

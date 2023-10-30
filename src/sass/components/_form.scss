@@ -28,6 +28,7 @@
     background-color: var(--color-text-lightest);
     border-radius: 1rem;
     color: var(--color-form-text);
+    box-shadow: var(--shadow-contact-input);
 
     &::placeholder {
       opacity: 0;
@@ -59,6 +60,7 @@
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.2s;
+    box-shadow: var(--shadow-contact-input);
 
     &:hover {
       opacity: 0.5;
