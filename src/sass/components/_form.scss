@@ -27,7 +27,7 @@
     border: none;
     background-color: var(--color-text-lightest);
     border-radius: 1rem;
-    color: var(--color-text-dark);
+    color: var(--color-form-text);
 
     &::placeholder {
       opacity: 0;
@@ -92,6 +92,7 @@
     font-weight: var(--fw-bold);
     padding: 1rem;
     display: none;
+    width: 80%;
   }
 
   &--loading &__loader,
