@@ -9,14 +9,10 @@
 
   &__row {
     display: flex;
-    justify-content: space-between;
-
-    @media (max-width: $bp-2) {
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 2rem;
-    }
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   &__logo {
@@ -63,15 +59,10 @@
   }
 
   &__socials {
+    display: flex;
     list-style-type: none;
     gap: 1rem;
-    margin-top: 2rem;
     align-items: center;
     justify-content: center;
-    display: none;
-
-    @media (max-width: $bp-2) {
-      display: flex;
-    }
   }
 }
