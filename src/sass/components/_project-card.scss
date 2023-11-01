@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .project-card {
   width: 100%;
   display: flex;
@@ -23,18 +25,28 @@
   }
 
   &__heading {
-    white-space: nowrap;
-    display: inline-block;
     color: white;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 0.5rem;
     border-radius: 0.25rem;
     font-weight: var(--fw-regular);
     font-weight: var(--fw-bold);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.45rem 0.45rem 0 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba(69, 93, 219, 0.75);
+    }
   }
 
   &__links {
@@ -43,6 +55,11 @@
     text-align: center;
     gap: 1rem;
     font-size: var(--fs-6);
+
+    @media (max-width: $bp-4) {
+      flex-direction: column;
+      align-items: stretch;
+    }
 
     a {
       flex: 1;
