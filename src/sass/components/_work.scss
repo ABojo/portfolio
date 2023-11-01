@@ -10,4 +10,28 @@
   &__heading {
     margin-bottom: 9rem;
   }
+
+  &__more {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  &__cards {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: $bp-1) {
+      grid-template-columns: 1fr 1fr;
+      max-width: 35rem;
+    }
+
+    @media (max-width: $bp-4) {
+      grid-template-columns: 1fr;
+      max-width: 20rem;
+    }
+  }
 }
