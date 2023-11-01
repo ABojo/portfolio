@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="I'm a self taught web developer. I use modern web technologies to build accessible, performant, and responsive web applications."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
@@ -46,434 +50,436 @@
         </div>
       </div>
     </header>
-    <section class="hero" id="home">
-      <p class="hero__position">Web Developer</p>
-      <h1 class="heading-1 hero__heading">
-        Alex <span class="highlight">Bojorquez</span>
-        <span aria-hidden="true" class="hero__pronunciation">(bo · hor · kez)</span>
-      </h1>
-      <p class="hero__sub">I build things for the web.</p>
-      <div class="hero__links">
-        <a class="hero__link hero__link--work" href="#work">My Work</a>
-        <a class="hero__link hero__link--contact" href="#contact">Contact Me</a>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="about__inner">
-        <h2 class="heading-2 about__heading">About Me</h2>
-        <p class="about__paragraph">
-          I’m a self taught web developer. I’ve spent the last few years of my life building things for the web and have
-          slowly built myself up into a reliable developer. In the beginning, I was doing this as a hobby with no
-          intention of becoming a professional. As time progressed, I realized that I was very passionate about this
-          work and decided that I wanted to take it more seriously. I’ve done a lot of reading, created a lot projects,
-          and spent even more time debugging my code. After a lot of hard work, I feel confident in my ability to do
-          this professionally.
-        </p>
-        <p class="about__paragraph">
-          I don’t have a computer science degree, but self teaching has been a very valuable experience for me. Becoming
-          adaptable enough to teach myself how to use new languages, frameworks, and tools has been very helpful for my
-          journey. Now, I can take problems I haven’t dealt with before, find a solution, and implement it on my own. I
-          take pride in what I build, so it’s important to me that I continue to learn and grow.
-        </p>
-        <p class="about__paragraph">
-          I want to grow as a developer, and I can’t think of a better way to do that than working as one. I’m looking
-          for an opportunity that will allow me to spend my days coding full-time, provide value to people, and earn a
-          living while doing it.
-        </p>
-        <div class="toolkit">
-          <h3 class="heading-3 toolkit__heading">My <span class="highlight">Toolkit</span></h3>
-          <ul class="toolkit__grid">
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-html.png" alt="HTML" />
-              <p class="toolkit__text">HTML</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-css.png" alt="CSS" />
-              <p class="toolkit__text">CSS</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-javascript.png" alt="JavaScript" />
-              <p class="toolkit__text">JavaScript</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-sass.png" alt="Sass" />
-              <p class="toolkit__text">SCSS</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-tailwind.png" alt="Tailwind" />
-              <p class="toolkit__text">Tailwind</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-typescript.png" alt="TypeScript" />
-              <p class="toolkit__text">TypeScript</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-react.png" alt="React" />
-              <p class="toolkit__text">React</p>
-            </li>
-            <li class="toolkit__item">
-              <img
-                class="toolkit__image toolkit__image--round"
-                src="/assets/images/toolkit/image-next.png"
-                alt="Next.js"
-              />
-              <p class="toolkit__text">Next.js</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-node.png" alt="Node.js" />
-              <p class="toolkit__text">Node.js</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-express.png" alt="Express.js" />
-              <p class="toolkit__text">Express.js</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-git.png" alt="Git" />
-              <p class="toolkit__text">Git</p>
-            </li>
-            <li class="toolkit__item">
-              <img class="toolkit__image" src="/assets/images/toolkit/image-mongo.png" alt="Mongo DB" />
-              <p class="toolkit__text">Mongo DB</p>
-            </li>
-          </ul>
+    <main>
+      <section class="hero" id="home">
+        <p class="hero__position">Web Developer</p>
+        <h1 class="heading-1 hero__heading">
+          Alex <span class="highlight">Bojorquez</span>
+          <span aria-hidden="true" class="hero__pronunciation">(bo · hor · kez)</span>
+        </h1>
+        <p class="hero__sub">I build things for the web.</p>
+        <div class="hero__links">
+          <a class="hero__link hero__link--work" href="#work">My Work</a>
+          <a class="hero__link hero__link--contact" href="#contact">Contact Me</a>
         </div>
-      </div>
-    </section>
-    <section class="work" id="work">
-      <div class="work__inner">
-        <h2 class="heading-2 work__heading">My Work</h2>
-        <div class="project">
-          <div class="project__image project__image--left">
-            <picture>
-              <source srcset="/assets/images/projects/dev-jobs-mobile.png" media="(max-width: 33.125rem)" />
-              <img src="/assets/images/projects/dev-jobs-desktop.png" alt="Dev Jobs UI" />
-            </picture>
-          </div>
-          <div class="project__details">
-            <h3 class="heading-3 project__heading">Dev <span class="highlight">Jobs</span></h3>
-            <p class="project__paragraph">
-              This is a web app that lets developers search for jobs. They can filter jobs by title, location, and
-              contract type. Once they have found a job they're interested in, they can open up the job listing and read
-              about the position in more detail.
-            </p>
-            <ul class="project__tools">
-              <li class="project__tool">React</li>
-              <li class="project__tool">TypeScript</li>
-              <li class="project__tool">SCSS</li>
+      </section>
+      <section class="about" id="about">
+        <div class="about__inner">
+          <h2 class="heading-2 about__heading">About Me</h2>
+          <p class="about__paragraph">
+            I’m a self taught web developer. I’ve spent the last few years of my life building things for the web and
+            have slowly built myself up into a reliable developer. In the beginning, I was doing this as a hobby with no
+            intention of becoming a professional. As time progressed, I realized that I was very passionate about this
+            work and decided that I wanted to take it more seriously. I’ve done a lot of reading, created a lot
+            projects, and spent even more time debugging my code. After a lot of hard work, I feel confident in my
+            ability to do this professionally.
+          </p>
+          <p class="about__paragraph">
+            I don’t have a computer science degree, but self teaching has been a very valuable experience for me.
+            Becoming adaptable enough to teach myself how to use new languages, frameworks, and tools has been very
+            helpful for my journey. Now, I can take problems I haven’t dealt with before, find a solution, and implement
+            it on my own. I take pride in what I build, so it’s important to me that I continue to learn and grow.
+          </p>
+          <p class="about__paragraph">
+            I want to grow as a developer, and I can’t think of a better way to do that than working as one. I’m looking
+            for an opportunity that will allow me to spend my days coding full-time, provide value to people, and earn a
+            living while doing it.
+          </p>
+          <div class="toolkit">
+            <h3 class="heading-3 toolkit__heading">My <span class="highlight">Toolkit</span></h3>
+            <ul class="toolkit__grid">
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-html.png" alt="HTML" />
+                <p class="toolkit__text">HTML</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-css.png" alt="CSS" />
+                <p class="toolkit__text">CSS</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-javascript.png" alt="JavaScript" />
+                <p class="toolkit__text">JavaScript</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-sass.png" alt="Sass" />
+                <p class="toolkit__text">SCSS</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-tailwind.png" alt="Tailwind" />
+                <p class="toolkit__text">Tailwind</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-typescript.png" alt="TypeScript" />
+                <p class="toolkit__text">TypeScript</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-react.png" alt="React" />
+                <p class="toolkit__text">React</p>
+              </li>
+              <li class="toolkit__item">
+                <img
+                  class="toolkit__image toolkit__image--round"
+                  src="/assets/images/toolkit/image-next.png"
+                  alt="Next.js"
+                />
+                <p class="toolkit__text">Next.js</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-node.png" alt="Node.js" />
+                <p class="toolkit__text">Node.js</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-express.png" alt="Express.js" />
+                <p class="toolkit__text">Express.js</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-git.png" alt="Git" />
+                <p class="toolkit__text">Git</p>
+              </li>
+              <li class="toolkit__item">
+                <img class="toolkit__image" src="/assets/images/toolkit/image-mongo.png" alt="Mongo DB" />
+                <p class="toolkit__text">Mongo DB</p>
+              </li>
             </ul>
-            <div class="project__links">
-              <a class="project__live" href="https://dev-jobs.abojo.dev" target="_blank">Live Site</a>
-              <a class="project__code" href="https://github.com/ABojo/dev-jobs" target="_blank">View Code</a>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="work__inner">
+          <h2 class="heading-2 work__heading">My Work</h2>
+          <div class="project">
+            <div class="project__image project__image--left">
+              <picture>
+                <source srcset="/assets/images/projects/dev-jobs-mobile.png" media="(max-width: 33.125rem)" />
+                <img src="/assets/images/projects/dev-jobs-desktop.png" alt="Dev Jobs UI" />
+              </picture>
+            </div>
+            <div class="project__details">
+              <h3 class="heading-3 project__heading">Dev <span class="highlight">Jobs</span></h3>
+              <p class="project__paragraph">
+                This is a web app that lets developers search for jobs. They can filter jobs by title, location, and
+                contract type. Once they have found a job they're interested in, they can open up the job listing and
+                read about the position in more detail.
+              </p>
+              <ul class="project__tools">
+                <li class="project__tool">React</li>
+                <li class="project__tool">TypeScript</li>
+                <li class="project__tool">SCSS</li>
+              </ul>
+              <div class="project__links">
+                <a class="project__live" href="https://dev-jobs.abojo.dev" target="_blank">Live Site</a>
+                <a class="project__code" href="https://github.com/ABojo/dev-jobs" target="_blank">View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__details">
+              <h3 class="heading-3 project__heading">Pay<span class="highlight">API</span></h3>
+              <p class="project__paragraph">
+                PayAPI is a static landing page for a paid API service. Users can visit the home, about, pricing, and
+                contact pages. There are CTA forms for free trials and a contact form that allow users to interact with
+                the brand.
+              </p>
+              <ul class="project__tools">
+                <li class="project__tool">HTML</li>
+                <li class="project__tool">SCSS</li>
+                <li class="project__tool">JavaScript</li>
+              </ul>
+              <div class="project__links">
+                <a class="project__live" href="https://payapi.abojo.dev" target="_blank">Live Site</a>
+                <a class="project__code" href="https://github.com/ABojo/pay-api" target="_blank">View Code</a>
+              </div>
+            </div>
+            <div class="project__image project__image--right">
+              <picture>
+                <source srcset="/assets/images/projects/pay-api-mobile.png" media="(max-width: 33.125rem)" />
+                <img src="/assets/images/projects/pay-api-desktop.png" alt="PayAPI UI" />
+              </picture>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image project__image--left">
+              <picture>
+                <source srcset="/assets/images/projects/multi-form-mobile.png" media="(max-width: 33.125rem)" />
+                <img src="/assets/images/projects/multi-form-desktop.png" alt="Dictionary App UI" />
+              </picture>
+            </div>
+            <div class="project__details">
+              <h3 class="heading-3 project__heading">Multi <span class="highlight">Form</span></h3>
+              <p class="project__paragraph">
+                This is a multi-step form for a gaming website's checkout process. It includes form steps for personal
+                information, choosing a plan, selecting add-ons, and viewing a summary before checking out. It has input
+                validation and is keyboard accessible for users who want to purchase but can't use a mouse.
+              </p>
+              <ul class="project__tools">
+                <li class="project__tool">React</li>
+                <li class="project__tool">TypeScript</li>
+                <li class="project__tool">SCSS</li>
+              </ul>
+              <div class="project__links">
+                <a class="project__live" href="https://form.abojo.dev/" target="_blank">Live Site</a>
+                <a class="project__code" href="https://github.com/ABojo/multi-form" target="_blank">View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__details">
+              <h3 class="heading-3 project__heading">Design <span class="highlight">Agency</span></h3>
+              <p class="project__paragraph">
+                This is a static landing page for a creative design agency. The design was more challenging to implement
+                than most of my other projects because of the way the elements overflow into other portions of the
+                layout. The page is mostly static, but it includes a project slider implemented in vanilla JavaScript.
+              </p>
+              <ul class="project__tools">
+                <li class="project__tool">HTML</li>
+                <li class="project__tool">SCSS</li>
+                <li class="project__tool">JavaScript</li>
+              </ul>
+              <div class="project__links">
+                <a class="project__live" href="https://design-agency.abojo.dev/" target="_blank">Live Site</a>
+                <a class="project__code" href="https://github.com/ABojo/creative-agency" target="_blank">View Code</a>
+              </div>
+            </div>
+            <div class="project__image project__image--right">
+              <picture>
+                <source srcset="/assets/images/projects/design-agency-mobile.png" media="(max-width: 33.125rem)" />
+                <img src="/assets/images/projects/design-agency-desktop.png" alt="Design Agency UI" />
+              </picture>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image project__image--left">
+              <picture>
+                <source srcset="/assets/images/projects/dictionary-mobile.png" media="(max-width: 33.125rem)" />
+                <img src="/assets/images/projects/dictionary-desktop.png" alt="Dictionary App UI" />
+              </picture>
+            </div>
+            <div class="project__details">
+              <h3 class="heading-3 project__heading">Dictionary <span class="highlight">App</span></h3>
+              <p class="project__paragraph">
+                This is an app for looking up definitions, using the data returned by the Free Dictionary API. Users can
+                see the definitions for different parts of speech, hear how the word is pronounced via the returned
+                audio file, view synonyms for the words, and visit the source of the definition. Lastly, the app has
+                both a font and theme switcher, so users can customize the feel of the dictionary.
+              </p>
+              <ul class="project__tools">
+                <li class="project__tool">React</li>
+                <li class="project__tool">TypeScript</li>
+                <li class="project__tool">SCSS</li>
+              </ul>
+              <div class="project__links">
+                <a class="project__live" href="https://dictionary.abojo.dev/" target="_blank">Live Site</a>
+                <a class="project__code" href="https://github.com/ABojo/dictionary-app" target="_blank">View Code</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="heading-3 work__more">More <span class="highlight">Projects</span></h3>
+          <div class="work__cards">
+            <div class="project-card">
+              <div class="project-card__head">
+                <img class="project-card__img" src="/assets/images/projects/countries.png" alt="Country Browser UI" />
+                <h4 class="project-card__heading">Country Browser</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://countries.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/fm-countries-switcher"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img class="project-card__img" src="/assets/images/projects/planet.png" alt="Planet Facts UI" />
+                <h4 class="project-card__heading">Planet Facts</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://planets.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/planet-directory"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img class="project-card__img" src="/assets/images/projects/url-shortener.png" alt="URL Shortener UI" />
+                <h4 class="project-card__heading">URL Shortener</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://url-shortener.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/url-shortener-landing"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img
+                  class="project-card__img"
+                  src="/assets/images/projects/bookmark-manager.png"
+                  alt="Bookmark Manager UI"
+                />
+                <h4 class="project-card__heading">Bookmark Manager</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://bookmark.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/bookmark-landing"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img
+                  class="project-card__img"
+                  src="/assets/images/projects/ecommerce-product.png"
+                  alt="Ecommerce Product UI"
+                />
+                <h4 class="project-card__heading">Ecommerce Product</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://ecommerce.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/ecommerce-page"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img class="project-card__img" src="/assets/images/projects/tips.png" alt="Tip Calculator UI" />
+                <h4 class="project-card__heading">Tip Calculator</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://tips.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/fm-tip-calculator"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img
+                  class="project-card__img"
+                  src="/assets/images/projects/app-illustration.png"
+                  alt="Chat App Illustration UI"
+                />
+                <h4 class="project-card__heading">App Illustration</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://app-illustration.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/chat-app-illustration"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img
+                  class="project-card__img"
+                  src="/assets/images/projects/manage-landing.png"
+                  alt="Manage Landing Page UI"
+                />
+                <h4 class="project-card__heading">Manage Landing</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://manage.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/manage-landing-page"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__head">
+                <img
+                  class="project-card__img"
+                  src="/assets/images/projects/bank-landing.png"
+                  alt="Bank Landing Page UI"
+                />
+                <h4 class="project-card__heading">Bank Landing</h4>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__links">
+                  <a class="project-card__live" target="_blank" href="https://easybank.abojo.dev">Live Site</a>
+                  <a class="project-card__code" target="_blank" href="https://github.com/ABojo/easybank">View Code</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project">
-          <div class="project__details">
-            <h3 class="heading-3 project__heading">Pay<span class="highlight">API</span></h3>
-            <p class="project__paragraph">
-              PayAPI is a static landing page for a paid API service. Users can visit the home, about, pricing, and
-              contact pages. There are CTA forms for free trials and a contact form that allow users to interact with
-              the brand.
-            </p>
-            <ul class="project__tools">
-              <li class="project__tool">HTML</li>
-              <li class="project__tool">SCSS</li>
-              <li class="project__tool">JavaScript</li>
-            </ul>
-            <div class="project__links">
-              <a class="project__live" href="https://payapi.abojo.dev" target="_blank">Live Site</a>
-              <a class="project__code" href="https://github.com/ABojo/pay-api" target="_blank">View Code</a>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact__inner">
+          <h2 class="heading-3 contact__heading">Contact <span class="highlight">Me</span></h2>
+          <form class="form">
+            <div class="form__loader">
+              <div class="spinner form__spinner"></div>
+              Submitting Form
             </div>
-          </div>
-          <div class="project__image project__image--right">
-            <picture>
-              <source srcset="/assets/images/projects/pay-api-mobile.png" media="(max-width: 33.125rem)" />
-              <img src="/assets/images/projects/pay-api-desktop.png" alt="PayAPI UI" />
-            </picture>
-          </div>
+            <div class="form__success">
+              <svg
+                class="form__check"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="50"
+                height="50"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#c8e6c9"
+                  d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
+                ></path>
+                <path
+                  fill="#4caf50"
+                  d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"
+                ></path>
+              </svg>
+              Thanks, I'll be in touch 🤝
+            </div>
+            <div class="form__field">
+              <input class="form__input" name="email" id="email" type="email" placeholder="Email" required />
+              <label class="form__label" for="email">Email</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" name="name" id="name" type="text" placeholder="Name" required />
+              <label class="form__label" for="name">Name</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" name="subject" id="subject" type="text" placeholder="Subject" required />
+              <label class="form__label" for="subject">Subject</label>
+            </div>
+            <div class="form__field">
+              <textarea
+                class="form__input form__input--big"
+                name="message"
+                id="message"
+                type="text"
+                placeholder="Message"
+                required
+              ></textarea>
+              <label class="form__label" for="message">Message</label>
+            </div>
+            <button class="form__submit" type="submit">Submit</button>
+            <p class="form__error-message">Sorry, there was a problem submitting the form 😔</p>
+          </form>
         </div>
-        <div class="project">
-          <div class="project__image project__image--left">
-            <picture>
-              <source srcset="/assets/images/projects/multi-form-mobile.png" media="(max-width: 33.125rem)" />
-              <img src="/assets/images/projects/multi-form-desktop.png" alt="Dictionary App UI" />
-            </picture>
-          </div>
-          <div class="project__details">
-            <h3 class="heading-3 project__heading">Multi <span class="highlight">Form</span></h3>
-            <p class="project__paragraph">
-              This is a multi-step form for a gaming website's checkout process. It includes form steps for personal
-              information, choosing a plan, selecting add-ons, and viewing a summary before checking out. It has input
-              validation and is keyboard accessible for users who want to purchase but can't use a mouse.
-            </p>
-            <ul class="project__tools">
-              <li class="project__tool">React</li>
-              <li class="project__tool">TypeScript</li>
-              <li class="project__tool">SCSS</li>
-            </ul>
-            <div class="project__links">
-              <a class="project__live" href="https://form.abojo.dev/" target="_blank">Live Site</a>
-              <a class="project__code" href="https://github.com/ABojo/multi-form" target="_blank">View Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project__details">
-            <h3 class="heading-3 project__heading">Design <span class="highlight">Agency</span></h3>
-            <p class="project__paragraph">
-              This is a static landing page for a creative design agency. The design was more challenging to implement
-              than most of my other projects because of the way the elements overflow into other portions of the layout.
-              The page is mostly static, but it includes a project slider implemented in vanilla JavaScript.
-            </p>
-            <ul class="project__tools">
-              <li class="project__tool">HTML</li>
-              <li class="project__tool">SCSS</li>
-              <li class="project__tool">JavaScript</li>
-            </ul>
-            <div class="project__links">
-              <a class="project__live" href="https://design-agency.abojo.dev/" target="_blank">Live Site</a>
-              <a class="project__code" href="https://github.com/ABojo/creative-agency" target="_blank">View Code</a>
-            </div>
-          </div>
-          <div class="project__image project__image--right">
-            <picture>
-              <source srcset="/assets/images/projects/design-agency-mobile.png" media="(max-width: 33.125rem)" />
-              <img src="/assets/images/projects/design-agency-desktop.png" alt="Design Agency UI" />
-            </picture>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project__image project__image--left">
-            <picture>
-              <source srcset="/assets/images/projects/dictionary-mobile.png" media="(max-width: 33.125rem)" />
-              <img src="/assets/images/projects/dictionary-desktop.png" alt="Dictionary App UI" />
-            </picture>
-          </div>
-          <div class="project__details">
-            <h3 class="heading-3 project__heading">Dictionary <span class="highlight">App</span></h3>
-            <p class="project__paragraph">
-              This is an app for looking up definitions, using the data returned by the Free Dictionary API. Users can
-              see the definitions for different parts of speech, hear how the word is pronounced via the returned audio
-              file, view synonyms for the words, and visit the source of the definition. Lastly, the app has both a font
-              and theme switcher, so users can customize the feel of the dictionary.
-            </p>
-            <ul class="project__tools">
-              <li class="project__tool">React</li>
-              <li class="project__tool">TypeScript</li>
-              <li class="project__tool">SCSS</li>
-            </ul>
-            <div class="project__links">
-              <a class="project__live" href="https://dictionary.abojo.dev/" target="_blank">Live Site</a>
-              <a class="project__code" href="https://github.com/ABojo/dictionary-app" target="_blank">View Code</a>
-            </div>
-          </div>
-        </div>
-        <h2 class="heading-3 work__more">More <span class="highlight">Projects</span></h2>
-        <div class="work__cards">
-          <div class="project-card">
-            <div class="project-card__head">
-              <img class="project-card__img" src="/assets/images/projects/countries.png" alt="Country Browser UI" />
-              <h4 class="project-card__heading">Country Browser</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://countries.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/fm-countries-switcher"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img class="project-card__img" src="/assets/images/projects/planet.png" alt="Planet Facts UI" />
-              <h4 class="project-card__heading">Planet Facts</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://planets.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/planet-directory"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img class="project-card__img" src="/assets/images/projects/url-shortener.png" alt="URL Shortener UI" />
-              <h4 class="project-card__heading">URL Shortener</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://url-shortener.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/url-shortener-landing"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img
-                class="project-card__img"
-                src="/assets/images/projects/bookmark-manager.png"
-                alt="Bookmark Manager UI"
-              />
-              <h4 class="project-card__heading">Bookmark Manager</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://bookmark.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/bookmark-landing"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img
-                class="project-card__img"
-                src="/assets/images/projects/ecommerce-product.png"
-                alt="Ecommerce Product UI"
-              />
-              <h4 class="project-card__heading">Ecommerce Product</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://ecommerce.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/ecommerce-page"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img class="project-card__img" src="/assets/images/projects/tips.png" alt="Tip Calculator UI" />
-              <h4 class="project-card__heading">Tip Calculator</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://tips.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/fm-tip-calculator"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img
-                class="project-card__img"
-                src="/assets/images/projects/app-illustration.png"
-                alt="Chat App Illustration UI"
-              />
-              <h4 class="project-card__heading">App Illustration</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://app-illustration.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/chat-app-illustration"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img
-                class="project-card__img"
-                src="/assets/images/projects/manage-landing.png"
-                alt="Manage Landing Page UI"
-              />
-              <h4 class="project-card__heading">Manage Landing</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://manage.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/manage-landing-page"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card__head">
-              <img
-                class="project-card__img"
-                src="/assets/images/projects/bank-landing.png"
-                alt="Bank Landing Page UI"
-              />
-              <h4 class="project-card__heading">Bank Landing</h4>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__links">
-                <a class="project-card__live" target="_blank" href="https://easybank.abojo.dev">Live Site</a>
-                <a class="project-card__code" target="_blank" href="https://github.com/ABojo/easybank">View Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="contact__inner">
-        <h2 class="heading-3 contact__heading">Contact <span class="highlight">Me</span></h2>
-        <form class="form">
-          <div class="form__loader">
-            <div class="spinner form__spinner"></div>
-            Submitting Form
-          </div>
-          <div class="form__success">
-            <svg
-              class="form__check"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="50"
-              height="50"
-              viewBox="0 0 48 48"
-            >
-              <path
-                fill="#c8e6c9"
-                d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
-              ></path>
-              <path
-                fill="#4caf50"
-                d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"
-              ></path>
-            </svg>
-            Thanks, I'll be in touch 🤝
-          </div>
-          <div class="form__field">
-            <input class="form__input" name="email" id="email" type="email" placeholder="Email" required />
-            <label class="form__label" for="email">Email</label>
-          </div>
-          <div class="form__field">
-            <input class="form__input" name="name" id="name" type="text" placeholder="Name" required />
-            <label class="form__label" for="name">Name</label>
-          </div>
-          <div class="form__field">
-            <input class="form__input" name="subject" id="subject" type="text" placeholder="Subject" required />
-            <label class="form__label" for="subject">Subject</label>
-          </div>
-          <div class="form__field">
-            <textarea
-              class="form__input form__input--big"
-              name="message"
-              id="message"
-              type="text"
-              placeholder="Message"
-              required
-            ></textarea>
-            <label class="form__label" for="message">Message</label>
-          </div>
-          <button class="form__submit" type="submit">Submit</button>
-          <p class="form__error-message">Sorry, there was a problem submitting the form 😔</p>
-        </form>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__row">
