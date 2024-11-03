@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <script>
+      const storageKey = "saved-theme";
+
       function userPrefersDarkMode() {
         return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
       }
 
-      const savedTheme = localStorage.getItem("saved-theme");
+      let currentTheme = localStorage.getItem(storageKey);
 
-      if (!savedTheme) {
-        savedTheme = userPrefersDarkMode() ? "dark" : "light";
+      if (!currentTheme) {
+        currentTheme = userPrefersDarkMode() ? "dark" : "light";
+        localStorage.setItem(storageKey, currentTheme);
       }
 
-      if (savedTheme === "dark") document.documentElement.classList.toggle("dark");
+      if (currentTheme === "dark") document.documentElement.classList.toggle("dark");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
