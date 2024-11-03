@@ -10,35 +10,13 @@
     themeToggle.setAttribute("aria-checked", themeToggle.getAttribute("aria-checked") === "true" ? "false" : "true");
   }
 
-  function getSavedTheme() {
-    return localStorage.getItem(storageKey);
-  }
-
   function saveTheme(newTheme) {
     localStorage.setItem(storageKey, newTheme);
   }
 
   function toggleSavedTheme() {
-    getSavedTheme() === "light" ? saveTheme("dark") : saveTheme("light");
+    localStorage.getItem(storageKey) === "light" ? saveTheme("dark") : saveTheme("light");
   }
-
-  function userPrefersDarkMode() {
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-
-  function setupTheme() {
-    let currentTheme = getSavedTheme();
-
-    if (!currentTheme) {
-      currentTheme = userPrefersDarkMode() ? "dark" : "light";
-
-      saveTheme(currentTheme);
-    }
-
-    if (currentTheme === "dark") toggleDarkMode();
-  }
-
-  setupTheme();
 
   themeToggleButton.addEventListener("click", () => {
     toggleDarkMode();

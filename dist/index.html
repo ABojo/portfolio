@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      function userPrefersDarkMode() {
+        return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+
+      const savedTheme = localStorage.getItem("saved-theme");
+
+      if (!savedTheme) {
+        savedTheme = userPrefersDarkMode() ? "dark" : "light";
+      }
+
+      if (savedTheme === "dark") document.documentElement.classList.toggle("dark");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -549,6 +562,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      if (document.documentElement.classList.contains("dark")) {
+        const themeToggle = document.querySelector(".theme-toggle");
+        themeToggle.classList.toggle("theme-toggle--enabled");
+        themeToggle.setAttribute(
+          "aria-checked",
+          themeToggle.getAttribute("aria-checked") === "true" ? "false" : "true"
+        );
+      }
+    </script>
     <script src="/js/index.js"></script>
   </body>
 </html>
