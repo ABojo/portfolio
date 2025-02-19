@@ -17,7 +17,7 @@
     top: 50%;
     left: 1rem;
     transform: translateY(-50%);
-    color: var(--color-text-light);
+    color: var(--color-badge);
     transition: all 0.2s;
   }
 
@@ -47,8 +47,10 @@
     left: 0.75rem;
   }
 
+
   &__input--big ~ &__label {
-    top: 2.5rem;
+    top: 2rem;
+    box-sizing: border-box;
   }
 
   &__submit {
